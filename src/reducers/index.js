@@ -1,2 +1,2 @@
-import reducer from "./numberReducer";
+import reducer from "./numbersReducer";
 export default reducer;
