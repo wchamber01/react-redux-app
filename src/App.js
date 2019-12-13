@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
+import Numbers from "./components/Numbers";
 
 function App() {
   return (
     <div className="App">
-      <h1>My App</h1>
-      {/* <Numbers /> */}
+      <Numbers />
     </div>
   );
 }

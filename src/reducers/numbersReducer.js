@@ -5,12 +5,12 @@ import {
 } from "../actions";
 
 const initialState = {
-  numbers: null,
+  numbers: "",
   isFetching: false,
   error: ""
 };
 
-const reducer = (state, initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_NUMBERS_START:
       return {
