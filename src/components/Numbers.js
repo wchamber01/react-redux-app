@@ -7,15 +7,15 @@ import { getNumbers } from "../actions";
 const Numbers = props => {
   console.log(props, "props");
   return (
-    <div>
-      <h1>Get random facts based on numbers!</h1>
+    <div className="factsHolder">
+      <h1>Get facts based on random numbers!</h1>
       {!props.numbers && !props.isFetching && (
-        <p>Go ahead! Get the facts about a random number!</p>
+        <h3>Go ahead! Get the facts about a random number!</h3>
       )}
       {props.isFetching && (
         <Loader type="Puff" color="#00BFFF" height={100} width={100} />
       )}
-      {props.numbers && <p>{props.numbers}</p>}
+      {props.numbers && <h3>{props.numbers}</h3>}
       <button onClick={props.getNumbers}>Get Facts!</button>
     </div>
   );
